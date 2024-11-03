@@ -1,3 +1,4 @@
+import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
@@ -32,17 +33,16 @@ class _ProfileScreenState extends State<ProfileScreen> {
           children: [
             // Profile Avatar and Info
             CircleAvatar(
-              radius: 40,
-              backgroundColor: Colors.green.shade100,
-              child: Icon(Icons.person, size: 40, color: Colors.green.shade700),
+              backgroundImage: NetworkImage('https://ih1.redbubble.net/image.2668043745.4689/raf,360x360,075,t,fafafa:ca443f4786.jpg'),
+              radius: 45
             ),
             SizedBox(height: 8),
             Text(
-              'Coffeestories',
+              'Funky Cirno',
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
             Text(
-              'mark.brock@icloud.com',
+              '2funky4u@touhou.com',
               style: TextStyle(color: Colors.grey),
             ),
             SizedBox(height: 16),
@@ -74,7 +74,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     title: Row(children:[
                     Text('My stores'),
                     SizedBox(width: 10),
-                    CircleAvatar(radius: 15, child: Text('2'), backgroundColor: Colors.green.shade300,)
+                    CircleAvatar(radius: 15, child: Text('2'), backgroundColor: Colors.blue.shade300,)
                   ] ),
                   trailing: Icon(Icons.chevron_right),
                   onTap: () {},
