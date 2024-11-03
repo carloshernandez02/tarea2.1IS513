@@ -1,4 +1,3 @@
-import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
@@ -33,7 +32,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           children: [
             // Profile Avatar and Info
             CircleAvatar(
-              backgroundImage: NetworkImage('https://ih1.redbubble.net/image.2668043745.4689/raf,360x360,075,t,fafafa:ca443f4786.jpg'),
+              backgroundImage: AssetImage('fumo/funkycirno.png'),
               radius: 45
             ),
             SizedBox(height: 8),
